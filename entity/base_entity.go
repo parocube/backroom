@@ -13,9 +13,9 @@ type BaseEntity struct {
 	CreateTime NullTime   `db:"create_time" json:"createTime"`
 	UpdateBy   *uuid.UUID `db:"update_by" json:"updateBy"`
 	UpdateTime NullTime   `db:"update_time" json:"updateTime"`
-	Version    int        `db:"version" json:"version"`
 	OwnerID    *uuid.UUID `db:"owner_id" json:"ownerId"`
 	EntryType  *string    `db:"entry_type" json:"entryType"`
+	Version    int        `db:"version" json:"version"`
 }
 
 func (e *BaseEntity) PrepareForCreate(actorID *uuid.UUID) {

@@ -57,6 +57,7 @@ logs/
 # Temp / build directories
 # =========================
 tmp/
+.tmp/
 temp/
 dist/
 build/
